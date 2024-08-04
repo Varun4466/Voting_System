@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nomination Panel</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+    <style>
+      .headerFont{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 24px;
+      }
+
+      .subFont{
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        
+      }
+      
+      .specialHead{
+        font-family: 'Oswald', sans-serif;
+      }
+
+      .normalFont{
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+    </style>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	
+	<div class="container">
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse
+    " role="navigation">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+          <a href="cpanel.php" class="navbar-brand headerFont text-lg"><strong>eVoting</strong></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="example-nav-collapse">
+          <ul class="nav navbar-nav">
+            <!-- 
+            <li><a href="#featuresTab"><span class="subFont"><strong>Features</strong></span></a></li>
+            <li><a href="#feedbackTab"><span class="subFont"><strong>Feedback</strong></span></a></li>
+            <li><a href="#"><span class="subFont"><strong>About</strong></span></a></li>
+        	-->
+          </ul>
+          
+
+          <button type="submit" class="btn btn-success navbar-right navbar-btn"><span class="normalFont"><strong>Admin Panel</strong></span></button>
+        </div>
+
+      </div> <!-- end of container -->
+    </nav>
+
+    <div class="container" style="padding:100px;">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="images/modi.jpeg" class="img img-thumbnail" style="width:200px;height:200px;" alt="">
+          <h4 class="normalFont text-center">Narendra Modi</h4>
+          <h5 class="normalFont text-center">Modi, a leader of the Bharatiya Janata Party, was the Chief Minister of Gujarat from 2001 to 2014 and is the Member of Parliament from Varanasi.</h5>
+          <hr>
+          <ul class="normalFont text-left">
+            <li>Born: September 17, 1950 (age 64), Vadnagar</li>
+            <li>Spouse: Jashodaben Modi</li>
+            <li>Education: Gujarat University (1983), University of Delhi (1978)</li>
+            <li>Parents: Heeraben Modi, Damodardas Mulchand Modi</li>
+            <li>Awards: CNN-IBN Indian of the Year</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <img src="images/rahul.jpeg" class="img img-thumbnail" style="width:200px;height:200px;" alt="">
+          <h4 class="normalFont text-center">Rahul Gandhi</h4>
+          <h5 class="normalFont text-center">Rahul Gandhi; is the Vice-President of the Indian National Congress party and the Chairperson of the Indian Youth Congress and the National Students Union of India.
+            <hr>
+            <ul class="text-left">
+              <li>Born: June 19, 1970 (age 44), New Delhi</li>
+              <li>Full name: Rahul Gandhi</li>
+              <li>Parents: Sonia Gandhi, Rajiv Gandhi</li>
+              <li>Siblings: Priyanka Gandhi</li>
+              <li>Education: Trinity College, Cambridge (1994–1995)</li>
+              <li>Awards: CNN-IBN Indian of the Year in Politics</li>
+            </ul>
+            
+          </h5>
+        </div>
+        <div class="col-sm-3">
+          <img src="data:image/jpeg;base64,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" class="img img-thumbnail" style="width:200px;height:200px;" alt="">
+          <h4 class="normalFont text-center">KCR</h4>
+          <h5 class="text-center normalFont">Kalvakuntla Chandrashekar Rao, often referred to by his initials KCR, is an Indian politician serving as the first and current Chief Minister of Telangana since 2 June 2014. He is the founder and leader of the Bharat Rashtra Samithi, a state party in India.</h5>
+          <hr>
+          <ul class="text-left">
+            <li>Born: 17 February 1954 (age 69 years), Chintamadaka</li>
+            <li>Full name: Kalvakuntla Chandrashekar Rao</li>
+           
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <img src="https://image.telanganatoday.com/wp-content/uploads/2021/07/RS-Praveen-Kumar-1_V_jpg--442x260-4g.webp?sw=412&dsz=442x260&iw=412&p=false&r=2.625" class="img img-thumbnail" style="width:200px;height:200px;" alt="">
+          <h4 class="normalFont text-center">Dr.RS Praveen kumar</h4>
+          <h5 class="normalFont text-center">RS Praveen Kumar is a former officer of Indian Police Service who served as the secretary of Telangana Social Welfare Residential Educational Institutions Society and Telangana Tribal Welfare Residential Educational Institutions Society.</h5>
+          <hr>
+          <ul class="text-left normalFont">
+            <li>Born: born 23 November 1967</li>
+            <li>Full name: Repalle Shiva Praveen Kumar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
